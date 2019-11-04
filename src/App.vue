@@ -27,8 +27,6 @@ export default {
 @import "./assets/common.less";
 @import "./assets/base.less";
 
-#app {
-}
 #header{
   padding: 10px;
   box-shadow: @boxShadow;
