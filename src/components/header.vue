@@ -2,7 +2,7 @@
   <header :class="{login: isLogin, 'no-login': !isLogin}">
     <div class="navigation">
       <template v-if="!isLogin">
-        <router-link to="/"><h1 class="logo">share</h1></router-link>
+        <h1 class="logo"><router-link to="/">share</router-link></h1>
         <p class="blog-choice">博客精选</p>
         <div class="buttons">
           <router-link to="/register"><el-button type="primary" size="medium">注册</el-button></router-link>
@@ -12,7 +12,7 @@
       <template v-if="isLogin">
         <router-link to="/"><h1 class="logo">share</h1></router-link>
         <div class="blog-message">
-          <el-button type="primary" icon="el-icon-edit" circle></el-button>
+          <router-link to="/create"><el-button to="/" type="primary" icon="el-icon-plus" circle></el-button></router-link>
           <!-- <img :src="user.avatar" :alt="user.username" :title="user.username"> -->
           <el-dropdown trigger="click" placement="bottom">
             <span class="el-dropdown-link myMenu"><img src="../assets/img/zhizhang.jpg" alt="智障如我"></span>
@@ -91,16 +91,17 @@ img {
   .blog-message {
       display: flex;
       align-items: center;
-  }
-  .blog-message > .el-button {
-    padding: 8px;
-    margin-right: 20px;
-  }
-  .blog-message img {
-    width: 36px;
-    height: 36px;
-    border-radius: 2px;
-    
+      > a {
+        margin-right: 20px;
+      }
+      .el-button {
+        padding: 8px;
+      }
+      img {
+        width: 36px;
+        height: 36px;
+        border-radius: 2px;
+      }
   }
   .myMenu {
     cursor: pointer;
