@@ -10,7 +10,7 @@
         </div>
       </template>
       <template v-if="isLogin">
-        <h1 class="logo">share</h1>
+        <router-link to="/"><h1 class="logo">share</h1></router-link>
         <div class="blog-message">
           <el-button type="primary" icon="el-icon-edit" circle></el-button>
           <!-- <img :src="user.avatar" :alt="user.username" :title="user.username"> -->
