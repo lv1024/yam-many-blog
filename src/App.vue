@@ -26,6 +26,7 @@ export default {
 <style lang='less'>
 @import "./assets/common.less";
 @import "./assets/base.less";
+@import "./assets/markdown.less";
 
 #header{
   padding: 10px;

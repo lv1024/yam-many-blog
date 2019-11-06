@@ -13,7 +13,6 @@
         <router-link to="/"><h1 class="logo">share</h1></router-link>
         <div class="blog-message">
           <router-link to="/create"><el-button to="/" type="primary" icon="el-icon-plus" circle></el-button></router-link>
-          <!-- <img :src="user.avatar" :alt="user.username" :title="user.username"> -->
           <el-dropdown trigger="click" placement="bottom">
             <span class="el-dropdown-link myMenu"><img src="../assets/img/zhizhang.jpg" alt="智障如我"></span>
             <el-dropdown-menu slot="dropdown">
@@ -31,13 +30,11 @@
 // import auth from '@/api/auth'
 /* Vuex 提供的函数，经过处理映射到当前文件 */
 import auth from '@/api/auth'
-window.auth = auth
-
 import { mapGetters, mapActions } from 'vuex'
 
 export default {
   data() {
-    return { }
+    return { page: 1 }
   },
   computed: {
     /* 获取 store 中的 getters */
@@ -52,8 +49,8 @@ export default {
      * .then(isLogin=>xxx) */
     this.checkLogin()
   },
-      /* 获取判断用户登录状态的方法，引入到当前组件中
-     * 当前组件中就可以直接使用该方法 */
+  /* 获取判断用户登录状态的方法，引入到当前组件中
+  * 当前组件中就可以直接使用该方法 */
   methods: {
     ...mapActions([
       'checkLogin',
@@ -82,8 +79,11 @@ img {
   align-items: center;
   .logo {
     color: @themesColor;
-    font-size: 24px;
+    font-size: 22px;
     text-transform: uppercase;
+    a {
+      color: @themesColor;
+    }
   }
   .blog-choice {
     font-weight: bold;

@@ -1,20 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-// import Index from '@/pages/Index/template.vue'
-// import Create from '@/pages/Create/template.vue'
-// import Detail from '@/pages/Detail/template.vue'
-// import Edit from '@/pages/Edit/template.vue'
-// import Login from '@/pages/Login/template.vue'
-// import My from '@/pages/My/template.vue'
-// import Register from '@/pages/Register/template.vue'
-// import User from '@/pages/User/template.vue'
-import ElementUI from 'element-ui';
-import 'element-ui/lib/theme-chalk/index.css';
-
 import store from '../store'
-window.store = store
-
-Vue.use(ElementUI);
 Vue.use(Router)
 
 const router = new Router({
@@ -29,11 +15,11 @@ const router = new Router({
       meta: { requiresAuth: true }
     },
     { // 用户详情页面
-      path: '/detail', 
+      path: '/detail/:blogId', 
       component: ()=> import('@/pages/Detail/template.vue')
     },
     { // 编辑博客页面
-      path: '/edit', 
+      path: '/edit/:blogId', 
       component: ()=> import('@/pages/Edit/template.vue'),
       meta: { requiresAuth: true }
     },
@@ -51,7 +37,7 @@ const router = new Router({
       component: ()=> import('@/pages/Register/template.vue')
     },
     { // 其他用户主页
-      path: '/user', 
+      path: '/user/:blogId', 
       component: ()=> import('@/pages/User/template.vue')
     }
   ]
