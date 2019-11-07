@@ -5,8 +5,7 @@ export default {
       return {
         blogs: [],
         total: 0, //博客总页数
-        page: 1,
-        thisPage: this.$route.query.page -0
+        page: 1
       }
     },
     created(){

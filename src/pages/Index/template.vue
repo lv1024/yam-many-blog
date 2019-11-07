@@ -15,7 +15,7 @@
     <section class="blog-pages">
       <el-pagination
         background
-        :current-page.sync="thisPage"
+        :current-page.sync="page"
         layout="prev, pager, next"
         :total="total"
         @current-change="onPagesChange">
