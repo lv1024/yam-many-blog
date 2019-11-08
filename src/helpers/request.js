@@ -5,7 +5,7 @@ import { Message } from 'element-ui'
 /* 请求的数据类型约定 */
 axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded'
 /* 后端接口域名地址(设置后请求时就可以不用写这部分 URL) */
-axios.defaults.baseURL = 'http://blog-server.hunger-valley.com'
+axios.defaults.baseURL = 'https://blog-server.hunger-valley.com'
 /* 前后端分离的项目，前端后端是在不同的服务器上，会涉及到跨域(默认情况跨域请求是不带 Cookie 数据的)
  * 此处设置异步请求(跨域)带 Cookie 数据 -- */
 axios.defaults.withCredentials = true
