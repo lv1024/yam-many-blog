@@ -25,7 +25,6 @@ export default function request(url, type = 'GET', data = {}) {
             option.data = data
         }
         axios(option).then(res => {
-            console.log(res.data)
             /* 如果返回的数据 data.status = 'ok'
              * - 如果成功返回数据格式：{ "status": "ok", "msg": "注册成功", "data": { xxx } }
              * - 之后就可以.then()处理这个数据 */

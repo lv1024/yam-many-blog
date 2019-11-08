@@ -1,6 +1,6 @@
-# vue_blog-client
+## 项目预览地址
 
-> A Vue.js project
+[Vue 多人博客项目](https://chenning02.github.io/git-hunger-vue_blog-client/dist/)
 
 ## Build Setup
 
@@ -24,5 +24,13 @@ md 插件
 
 ```bash
 npm i marked --save
+```
+
+接口改为https
+
+打开根目录下 `src > helpers > request.js` 将请求的域名改为：
+
+```js
+axios.defaults.baseURL = 'https://blog-server.hunger-valley.com'
 ```
 
