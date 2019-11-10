@@ -1,7 +1,7 @@
 <template>
     <footer>
         <div class="copyright">
-            <p>© xiedaimala.com 2019 wechat: xiedaimala01</p>
+            <p>© ChenNing02 2019</p>
         </div>
     </footer>
 </template>

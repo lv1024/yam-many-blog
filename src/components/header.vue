@@ -2,7 +2,7 @@
   <header :class="{login: isLogin, 'no-login': !isLogin}">
     <div class="navigation">
       <template v-if="!isLogin">
-        <h1 class="logo"><router-link to="/">share</router-link></h1>
+        <router-link to="/"><h1 class="logo">share</h1></router-link>
         <p class="blog-choice">博客精选</p>
         <div class="buttons">
           <router-link to="/register"><el-button type="primary" size="medium">注册</el-button></router-link>
@@ -14,7 +14,7 @@
         <div class="blog-message">
           <router-link to="/create"><el-button to="/" type="primary" icon="el-icon-plus" circle></el-button></router-link>
           <el-dropdown trigger="click" placement="bottom">
-            <span class="el-dropdown-link myMenu"><img src="../assets/img/zhizhang.jpg" alt="智障如我"></span>
+            <span class="el-dropdown-link myMenu"><img class="avatar" :src="user.avatar" :alt="user.username" :title="user.username"></span>
             <el-dropdown-menu slot="dropdown">
               <router-link to="/my"><el-dropdown-item icon="el-icon-user-solid">我的主页</el-dropdown-item></router-link>
               <el-link @click="onLogout" :underline="false"><el-dropdown-item icon="el-icon-error">退出登录</el-dropdown-item></el-link>
@@ -34,7 +34,7 @@ import { mapGetters, mapActions } from 'vuex'
 
 export default {
   data() {
-    return { page: 1 }
+    return { }
   },
   computed: {
     /* 获取 store 中的 getters */
@@ -58,7 +58,7 @@ export default {
     ]),
     onLogout(){
       this.logout()
-    }
+    },
   }
 }
 </script>
@@ -81,9 +81,7 @@ img {
     color: @themesColor;
     font-size: 22px;
     text-transform: uppercase;
-    a {
-      color: @themesColor;
-    }
+    cursor: pointer;
   }
   .blog-choice {
     font-weight: bold;

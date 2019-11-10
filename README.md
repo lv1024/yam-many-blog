@@ -34,3 +34,21 @@ npm i marked --save
 axios.defaults.baseURL = 'https://blog-server.hunger-valley.com'
 ```
 
+更改icon图标路径
+
+打开根目录下 ` build > utils.js` 其中的这部分 在 `fallback` 后追加一个属性 `publicPath: '../../'`
+
+```js
+// Extract CSS when that option is specified
+// (which is the case during production build)
+if (options.extract) {
+  return ExtractTextPlugin.extract({
+    use: loaders,
+    fallback: 'vue-style-loader',
+    publicPath: '../../'
+  })
+} else {
+  return ['vue-style-loader'].concat(loaders)
+}
+```
+
