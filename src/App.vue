@@ -3,7 +3,7 @@
     <Header id="header"></Header>
     <main id="main">
       <div class="content">
-        <router-view/>
+        <router-view></router-view>
       </div>
     </main>
     <Footer id="footer"></Footer>

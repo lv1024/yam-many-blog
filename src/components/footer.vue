@@ -5,8 +5,6 @@
         </div>
     </footer>
 </template>
-
-
 <style scoped lang="less">
 @import "../assets/base.less";
     .copyright {
