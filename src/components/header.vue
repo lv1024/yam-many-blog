@@ -74,6 +74,7 @@ img {
 .navigation {
   max-width: @layout;
   margin: 0 auto;
+  padding: 0 10px 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -105,5 +106,7 @@ img {
     cursor: pointer;
   }
 }
+
+
 
 </style>

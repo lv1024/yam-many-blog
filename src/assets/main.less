@@ -1,0 +1,184 @@
+@import "./base.less";
+
+#header {
+  padding: 10px 5px 0;
+  box-shadow: @boxShadow;
+  background-color: @bgColor;
+  border-top: 3px solid @themesColor;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1), 0 1px rgba(0, 0, 0, 0.1);
+  background: #fafafa;
+  position: relative;
+}
+#main {
+
+}
+#footer {
+  padding: 10px;
+  // box-shadow: @boxShadow;
+  background-color: @bgColor;
+  border-top: 1px solid #EEE;
+}
+.content {
+  #edit,
+  #index,
+  #register,
+  #login {
+    max-width: @layout;
+    margin: 0 auto;
+  }
+  #edit {
+    padding: 15px;
+    h2 {
+      padding-top: 30px;
+        color: @themesColor;
+        text-align: center;
+        font-size: 24px;
+    }
+  }
+  #detail {
+    min-height: calc(100vh - 156px);
+    .user-info {
+      background-color: #f6f6f6;
+      padding-top: 10px;
+      margin-bottom: 10px;
+      .info-main {
+        width: 100%;
+        max-width: @layout;
+        margin: 0 auto;
+        padding: 15px;
+        display: flex;
+        .photo {
+          // display: inline;
+          margin-right: 15px;
+          img {
+            vertical-align: middle;
+            width: 65px;
+            height: 65px;
+            border-radius: 2px;
+          }
+        }
+        .text {
+          flex-grow: 1;
+          overflow: hidden;
+        }
+      }
+    }
+    .article {
+      max-width: @layout;
+      margin: 0 auto;
+      padding-bottom: 50px;
+    }
+  }
+  #login,
+  #register {
+    min-height: calc(100vh - 166px);
+  }
+  .login-main, .register-main {
+    max-width: 360px;
+    margin: 30px auto 0;
+    padding: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    background: #fafafa;
+  }
+  #my {
+    .user-info {
+      background-color: #f6f6f6;
+      display: flex;
+      .info-main {
+        width: 100%;
+        max-width: @layout;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        padding: 15px;
+        display: flex;
+        .photo {
+            display: inline;
+            margin-right: 15px;
+            img {
+                vertical-align: middle;
+                width: 65px;
+                height: 65px;
+                border-radius: 2px;
+            }
+        }
+        .text {
+            flex-grow: 1;
+            .my-Introduction {
+              color: @textColor;
+            }
+        }
+      }
+    }
+    .my-content, .user-content {
+      padding: 15px;
+      max-width: @layout;
+      margin: 0 auto;
+      .item {
+        display: block;
+        padding: 10px 0;
+        border-bottom: 1px solid @borderColor;
+        h3 {
+            color: @themesColor;
+        }
+        .operate {
+            padding-top: 6px;
+            display: flex;
+            justify-content: space-between;
+            .actions {
+                a:nth-child(1){
+                    margin-right: 15px;
+                }
+            }
+            .date {
+                color: @themesGreen;
+            }
+        }
+      }
+      .item:last-child {
+          border-bottom: 0;
+      }
+    }
+    .blog-pages {
+        margin-top: 10px;
+        text-align: center;
+        padding: 6px 0;
+    }
+  }
+  #index {
+    padding: 0 15px;
+    min-height: calc(100vh - 172px);
+    .blog-posts {
+      padding: 10px 0;
+      max-width: @layout;
+      margin: 0 auto;
+      margin-bottom: 10px;
+      .posts-main {
+        .item {
+          display: flex;
+          padding: 15px 0;
+          padding-bottom: 12px;
+        }
+      }
+    }
+    .blog-pages {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.user-info {
+  .text {
+    h3 {
+      color: @themesColor;
+    }
+    p {
+      color: @themesGreen;
+      font-size: 14px;
+      a {
+        color: @textNotes;
+        margin-right: 10px;
+      }
+    }
+  }
+}

@@ -1,87 +1,89 @@
 @import "./base.less";
 
 #detail {
-    .article {
-        padding: 15px 20px;
-        h1, h2 {
-          margin-top: 1em;
-          border-bottom: 1px solid #ccc;
-          margin-bottom: 10px;
-        }
-        h1:first-child, 
-        h2:first-child, 
-        h3:first-child, 
-        h4:first-child, 
-        h5:first-child, 
-        h6:first-child {
-          margin-top: 0;
-        }
-        a {
-          color: @themesColor;
-        }
-        a:hover {
-          text-decoration: underline;
-        }
-        img {
-          max-width: 100%;
-        }
-        ol,  ul {
-          padding-left: 2rem;
-          margin: .5rem 0;
-        }
-        
-        ol > li,  ul > li {
-          color: @textColor;
-        }
-        
-        ol > li > *,  ul > li > * {
-          color: #333;
-        }
-        ol > li > a,  ul > li > a {
-          color: @themesColor;
-        }
-        
-        //  ol > li > *:not(ol):not(ul),  ul > li > *:not(ol):not(ul) {
-        //   padding-left: .25rem;
-        // }
-        
-          ul {
-          list-style-type: disc;
-        }
-        /* 自定义样式 */
-        code {
-            background: #ebeef5;
-            border-radius: 3px;
-            padding: 2px;
-            margin: 0 2px;
-            font-family: 'Consolas','Cousine', monospace;
-        }
-        pre {
-            color: #3a3432;
-            margin: 10px 0;
-            background-color: #fafafa;
-            border: 1px solid #eaeefb;
-            border-radius: 3px;
-            padding: 8px 12px;
-            overflow-x: auto;
-            overflow-y: hidden;
-            code {
-                padding: 0;
-                margin: 0;
-                border: none;
-                background: none;
-                font-family: 'Consolas','Cousine', monospace;
-            }
-        }
-        blockquote {
-          padding: 5px;
-          padding-left: 15px;
-          border-left: 4px solid #50bfff;
-          background-color: #ecf8ff;
-          border-radius: 4px;
-        }
+  .article {
+    padding: 15px 20px;
+    h1,
+    h2 {
+      margin-top: 1em;
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 10px;
     }
-}
+    h1:first-child,
+    h2:first-child,
+    h3:first-child,
+    h4:first-child,
+    h5:first-child,
+    h6:first-child {
+      margin-top: 0;
+    }
+    a {
+      color: @themesColor;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    img {
+      max-width: 100%;
+    }
+    ol,
+    ul {
+      padding-left: 2rem;
+      margin: 0.5rem 0;
+    }
 
+    ol > li,
+    ul > li {
+      color: @textColor;
+    }
 
- 
+    ol > li > *,
+    ul > li > * {
+      color: #333;
+    }
+    ol > li > a,
+    ul > li > a {
+      color: @themesColor;
+    }
+
+    //  ol > li > *:not(ol):not(ul),  ul > li > *:not(ol):not(ul) {
+      //   padding-left: .25rem;
+      // }
+
+      ul {
+        list-style-type: disc;
+      }
+      /* 自定义样式 */
+      code {
+        background: #ebeef5;
+        border-radius: 3px;
+        padding: 2px;
+        margin: 0 2px;
+        font-family: "Consolas", "Cousine", monospace;
+      }
+      pre {
+        color: #3a3432;
+        margin: 10px 0;
+        background-color: #fafafa;
+        border: 1px solid #eaeefb;
+        border-radius: 3px;
+        padding: 8px 12px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        code {
+          padding: 0;
+          margin: 0;
+          border: none;
+          background: none;
+          font-family: "Consolas", "Cousine", monospace;
+        }
+      }
+      blockquote {
+        padding: 5px;
+        padding-left: 15px;
+        border-left: 4px solid #50bfff;
+        background-color: #ecf8ff;
+        border-radius: 4px;
+      }
+    }
+  }

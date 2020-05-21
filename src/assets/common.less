@@ -9,7 +9,7 @@ body {
     font: 16px/1.8 Arial, "Microsoft YaHei", "黑体", "宋体", sans-serif;
     margin: 0;
     color: @textColor;
-    background-color: @bodyBgColor;
+    // background-color: @bodyBgColor;
 }
 
 html, body, #app {
@@ -17,7 +17,7 @@ html, body, #app {
 }
 a {
     color: @textColor;
-    text-decoration: none; 
+    text-decoration: none;
 }
 input {
     -webkit-appearance: none;
@@ -38,11 +38,11 @@ input {
     transition: border-color .2s cubic-bezier(.645,.045,.355,1);
     width: 100%;
 }
-//webkit内核的浏览器 
+//webkit内核的浏览器
 input::-webkit-input-placeholder {
     color: #c0c4cc;
 }
-//Firefox版本4-18 
+//Firefox版本4-18
 input:-moz-placeholder {
     color: #c0c4cc;
 }
@@ -62,9 +62,14 @@ input:focus {
     border-color: @themesColor;
     outline: 0;
 }
-// .el-pagination.is-background {
-//     .btn-next, .btn-prev, .el-pager li {
-//         background-color: #fff;
-//         margin: 0 6px;
-//     }
-// }
+
+.el-pagination.is-background {
+  .el-pager {
+    li {
+      background-color: #d9ecff;
+    }
+  }
+  .btn-next, .btn-prev {
+    background-color: #d9ecff;
+  }
+}

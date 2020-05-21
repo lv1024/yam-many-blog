@@ -1,41 +1,11 @@
 @import "../../assets/base.less";
 @import "../../assets/article.less";
 
-section {
-    box-shadow: @boxShadow;
-    background-color: @bgColor;
-}
-.user-info {
-    margin-bottom: 10px;
-    padding: 15px;
-    display: flex;
-    .photo {
-        display: inline;
-        margin-right: 15px;
-        img {
-            vertical-align: middle;
-            width: 65px;
-            height: 65px;
-            border-radius: 2px;
-        }
-    }
-    .text {
-        flex-grow: 1;
-        h3 {
-            color: @textColor;
-        }
-        p {
-            color: @textNotes;
-            font-size: 14px;
-            a {
-                color: @themesColor;
-                margin-right: 10px;
-            }
-        }
-    }
-}
+
+
 .article {
     padding: 15px 20px;
+    overflow: hidden;
     pre {
         background-color: #f7f7f7;
         color: #3a3432;

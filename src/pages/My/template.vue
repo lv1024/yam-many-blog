@@ -1,15 +1,17 @@
 <template>
   <div id="my">
     <section class="user-info">
-      <div class="photo">
-        <img :src="user.avatar" :alt="user.username" class="avatar">
-      </div>
-      <div class="text">
-        <h3>{{user.username}}</h3>
-        <p>鸡软骨xxx</p>
+      <div class="info-main">
+        <div class="photo">
+          <img :src="user.avatar" :alt="user.username" class="avatar">
+        </div>
+        <div class="text">
+          <h3>{{user.username}}</h3>
+          <p><span class="my-Introduction">鸡软骨xxx</span></p>
+        </div>
       </div>
     </section>
-    <section>
+    <section class="my-content">
       <router-link class="item" v-for="blog in blogs" :key="blog.id" :to="`/detail/${blog.id}`">
         <h3>{{blog.title}}</h3>
         <p>{{blog.description}}<p>

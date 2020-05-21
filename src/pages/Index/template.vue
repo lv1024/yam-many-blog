@@ -1,7 +1,8 @@
 <template>
   <div id="index">
     <section class="blog-posts">
-      <router-link class="item" v-for="blog in blogs" :to="`/detail/${blog.id}`" :key="blog.id">
+      <div class="posts-main">
+        <router-link class="item" v-for="blog in blogs" :to="`/detail/${blog.id}`" :key="blog.id">
           <figure class="avatar">
             <img :src="blog.user.avatar" :alt="blog.user.username">
             <figcaption>{{blog.user.username}}</figcaption>
@@ -10,7 +11,8 @@
             <h3>{{blog.title}}<span>{{friendlyDate(blog.createdAt)}}</span></h3>
             <p>{{blog.description}}</p>
           </div>
-      </router-link>
+        </router-link>
+      </div>
     </section>
     <section class="blog-pages">
       <el-pagination
