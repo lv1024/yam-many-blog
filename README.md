@@ -1,6 +1,6 @@
 ## 项目预览
 
-[Vue 多人博客项目](https://chenning02.github.io/git-hunger-vue_blog-client/dist/)
+[https://chenning02.github.io/git-hunger-vue_blog-client/dist/index.html](https://chenning02.github.io/git-hunger-vue_blog-client/dist/index.html)
 
 ## 运行
 
@@ -21,7 +21,7 @@ npm run build
 
 ## 开发踩坑记录
 
-md 插件
+缺少 md 插件
 
 ```bash
 npm i marked --save
