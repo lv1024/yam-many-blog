@@ -1,5 +1,9 @@
 @import "./base.less";
 
+#app {
+  overflow: hidden;
+}
+
 #header {
   padding: 10px 5px 0;
   box-shadow: @boxShadow;
@@ -9,9 +13,37 @@
   background: #fafafa;
   position: relative;
 }
-#main {
-
+// 未登录状态样式
+.login {
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      margin-bottom: -2px;
+      > img {
+        width: 1.5em;
+        height: 1.5em;
+        margin-top: -15px;
+        margin-right: 5px;
+      }
+    }
+  }
 }
+.no-login {
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &>a {
+      margin-bottom: 20px;
+    }
+    &>p, &>div{
+      margin: 20px 0;
+    }
+  }
+}
+
 #footer {
   padding: 10px;
   // box-shadow: @boxShadow;
@@ -69,13 +101,13 @@
       padding-bottom: 50px;
     }
   }
-  #login,
-  #register {
-    min-height: calc(100vh - 177px);
-  }
+  // #login,
+  // #register {
+  //   min-height: calc(100vh - 177px);
+  // }
   .login-main, .register-main {
     max-width: 360px;
-    margin: 30px auto 0;
+    margin: 30px auto 30px;
     padding: 15px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
@@ -126,6 +158,9 @@
             display: flex;
             justify-content: space-between;
             .actions {
+              a:hover {
+                color: @userTitle;
+              }
                 a:nth-child(1){
                     margin-right: 15px;
                 }
@@ -143,6 +178,7 @@
         margin-top: 10px;
         text-align: center;
         padding: 6px 0;
+        overflow-x: auto;
     }
   }
   #index {

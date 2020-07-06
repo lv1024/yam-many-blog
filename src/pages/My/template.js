@@ -1,5 +1,5 @@
 import blog from '@/api/blog'
-import { mapGetters } from 'vuex'
+import { mapGetters, mapActions } from 'vuex'
 export default {
     data () {
       return {
@@ -49,5 +49,8 @@ export default {
           year: dateObj.getFullYear()
         }
       }
+    },
+    watch: {
+
     }
   }
