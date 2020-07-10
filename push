@@ -1,4 +1,4 @@
-echo "上传至Github:"
+echo "# 上传至Github:"
 git push github
-echo "上传至码云:"
+echo "# 上传至码云"
 git push gitee
