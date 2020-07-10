@@ -4,7 +4,18 @@
 
 项目预览（github）：[https://chenning02.github.io/git-hunger-vue_blog-client/dist/index.html](https://chenning02.github.io/git-hunger-vue_blog-client/dist/index.html)
 
-项目预览（国内）：[https://chenning02.gitee.io/vue-multiplayer-blog/dist/index.html](https://chenning02.gitee.io/vue-multiplayer-blog/dist/index.html)
+项目预览（码云）：[https://chenning02.gitee.io/vue-multiplayer-blog/dist/index.html](https://chenning02.gitee.io/vue-multiplayer-blog/dist/index.html)
+
+## 登录
+
+测试账号
+
+```
+账号：chen
+密码：123654
+```
+
+> 你可以登录测试账号，也可以自己注册
 
 ## 运行
 
