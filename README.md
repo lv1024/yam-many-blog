@@ -2,7 +2,9 @@
 
 一个多人博客共享项目，使用Vue2.x搭建，部分UI灵感来自于思否
 
-项目预览：[https://chenning02.github.io/git-hunger-vue_blog-client/dist/index.html](https://chenning02.github.io/git-hunger-vue_blog-client/dist/index.html)
+项目预览（github）：[https://chenning02.github.io/git-hunger-vue_blog-client/dist/index.html](https://chenning02.github.io/git-hunger-vue_blog-client/dist/index.html)
+
+项目预览（国内）：[https://chenning02.gitee.io/vue-multiplayer-blog/dist/index.html](https://chenning02.gitee.io/vue-multiplayer-blog/dist/index.html)
 
 ## 运行
 
