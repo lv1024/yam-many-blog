@@ -1,4 +1,4 @@
-set "提交至GitHub"
+echo 上传至Github
 git push github
-set "提交至码云"
+echo 上传至码云
 git push gitee
