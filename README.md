@@ -4,9 +4,9 @@
 
 ## 项目预览
 
-国内（码云）：[https://lv1024.gitee.io/yam-many-blog/#/](https://lv1024.gitee.io/yam-many-blog/#/)
+国内（码云）：[https://uphg.gitee.io/yam-many-blog/#/](https://uphg.gitee.io/yam-many-blog/#/)
 
-国外（github）：[https://lv1024.github.io/yam-many-blog/dist/index.html](https://lv1024.github.io/yam-many-blog/dist/index.html)
+国外（github）：[https://uphg.github.io/yam-many-blog/dist/index.html](https://uphg.github.io/yam-many-blog/dist/index.html)
 
 ## 登录
 
