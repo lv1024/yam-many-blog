@@ -2,9 +2,11 @@
 
 一个多人博客共享项目，使用Vue2.x搭建，部分UI灵感来自于思否
 
-项目预览（github）：[https://lv1024.github.io/yam-many-blog/dist/index.html](https://lv1024.github.io/yam-many-blog/dist/index.html)
+## 项目预览
 
-项目预览（码云）：[https://chenning02.gitee.io/vue-multiplayer-blog/dist/index.html](https://chenning02.gitee.io/vue-multiplayer-blog/dist/index.html)
+国内（码云）：[https://lv1024.gitee.io/yam-many-blog/#/](https://lv1024.gitee.io/yam-many-blog/#/)
+
+国外（github）：[https://lv1024.github.io/yam-many-blog/dist/index.html](https://lv1024.github.io/yam-many-blog/dist/index.html)
 
 ## 登录
 
